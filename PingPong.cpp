@@ -86,6 +86,7 @@ public:
         return o;
     }
 };
+
 class cPaddle
 {
 private:
@@ -119,6 +120,7 @@ public:
         return o;
     }
 };
+
 class cGameManger
 {
 private:
@@ -295,7 +297,10 @@ public:
         }
     }
 };
-int main(){
 
+int main(){
+    cGameManger c(50, 25);
+    c.Run();
+    Sleep(25);
     return 0;
 }
